@@ -25,3 +25,6 @@ api.add_resource(VistaAlbum, '/usuario/<int:id_usuario>/album/<int:id_album>')
 api.add_resource(VistaCancionesAlbum, '/usuario/<int:id_usuario>/album/<int:id_album>/canciones')
 
 jwt.init_app(app)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0',port=8080)
