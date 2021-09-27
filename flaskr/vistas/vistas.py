@@ -137,7 +137,7 @@ class VistaSignIn(Resource):
             return {"mensaje": "usuario creado exitosamente", "token": token_de_acceso}
 
         except:
-            return {"Algo salio mal"},500
+            return {"mensaje":"Algo salio mal"},404
 
     @jwt_required()
     def put(self, id_usuario):
